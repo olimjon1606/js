@@ -53,7 +53,14 @@
         //     doSecond();
         // }
         // start()
-
+        function doFirst() {
+            document.write("first! ");
+            doSecond();
+        }
+        function doSecond() {
+            document.write("Second! ");
+            doFirst();
+        }
 
 
 
