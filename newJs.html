@@ -7,14 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <script type="text/javascript">
-        bucky = { name: "Bucky Roberts", age: 24, from: "Chicago" };
-        taylor = { name: "Taylor Swift", age: 21 };
+        // bucky = { name: "Bucky Roberts", age: 24, from: "Chicago" };
+        // taylor = { name: "Taylor Swift", age: 21 };
+        function people(name, age) {
+            this.name = name;
+            this.age = age;
+            this.yearsUntillRetire = yearsLeft;
+        }
+        function yearsLeft() {
+            var yearLeft = 65 - this.age;
+            return yearLeft;
+        }
+        var taylor = new people("Taylor Swift", 21);
+        var bucky = new people("Bucky Roberts", 24);
+
+
     </script>
 </head>
 
 <body>
     <script type="text/javascript">
-        document.write(bucky.name + " loves " + taylor.name + " because she is " + taylor.age + " and he is from " + bucky.from);
+        // document.write(bucky.name + " loves " + taylor.name + " because she is " + taylor.age + " and he is from " + bucky.from);
+        document.write(taylor.yearsUntillRetire());
     </script>
 </body>
 
