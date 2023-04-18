@@ -49,8 +49,12 @@
         var bp = new Array("head", "neck", "arm", "fingers");
         bp.reverse();
         bp.push("legs", 20, "hands");
-        var string1 = bp.join();
+        var string1 = bp.join("  ");
+        document.write(string1 + " <br/> ")
+        bp.sort();
+        var string1 = bp.join("  ");
         document.write(string1)
+        
 
     </script>
 </body>
