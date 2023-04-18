@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script type="text/javascript">
+        function validator() {
+            if (document.MyfirstForm.thebox.checked)
+                alert("Its checked!")
+            else
+                alert("Its not checked!")
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <form>
+        Username: <input type="text">
+        Password: <input type="password">
+        <input type="submit" value="Submit!">
+    </form> -->
+
+    <!-- <form name="MyfirstForm">
+        Username: <input type="text" name="username">
+        Password: <input type="password" name="password">
+        <input type="submit" value="Submit!">
+    </form> -->
+    <form name="MyfirstForm">
+        <input type="checkbox" name="thebox">
+        <input type="button" value="Press me!" onClick="validator()">
+    </form>
+    <script type="text/javascript">
+        // var form1 = document.forms[0].length;
+        // document.write(form1);
+
+        // var x = document.MyfirstForm.username.type;
+        // document.write(x);
+    </script>
+
+</body>
+
+</html>
